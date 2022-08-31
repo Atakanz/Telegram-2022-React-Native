@@ -5,7 +5,7 @@ export default StyleSheet.create({
     borderRadius: 20,
     borderWidth: 2.5,
     width: '70%',
-    borderColor: '#0088CC',
+    borderColor: '#71a6e2',
     marginVertical: 10,
   },
   formUnitDark: {
