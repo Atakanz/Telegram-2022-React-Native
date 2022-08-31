@@ -21,7 +21,7 @@ const LoginPage = ({navigation}) => {
     }
     setUser([userName, userPassword]);
     setIsLoggedIn(true);
-    navigation.navigate('Rehber');
+    navigation.navigate('BottomTab');
   };
 
   return (

@@ -1,12 +1,13 @@
 import React from 'react';
 import {SafeAreaView, Text} from 'react-native';
 
-const MessageArea = () => {
+const ChatPage = ({route, navigation}) => {
+  const {item} = route.params;
   return (
     <SafeAreaView>
-      <Text>Hello MessagePage!</Text>
+      <Text>{item.name}</Text>
     </SafeAreaView>
   );
 };
 
-export default MessageArea;
+export default ChatPage;
