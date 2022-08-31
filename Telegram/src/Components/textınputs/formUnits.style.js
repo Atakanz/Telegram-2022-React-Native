@@ -10,8 +10,10 @@ export default StyleSheet.create({
   },
   formUnitDark: {
     backgroundColor: '#212121',
+    color: '#fff',
   },
   formUnitLight: {
     backgroundColor: '#fff',
+    color: '#212121',
   },
 });

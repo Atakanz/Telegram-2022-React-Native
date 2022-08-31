@@ -10,8 +10,9 @@ const FormUnit = props => {
       style={[styles.formUnit, [styles[`formUnit${theme}`]]]}
       label={props.labelName}
       placeholder={props.holder}
-      placeholderTextColor={theme === 'Light' ? '#212121' : '#fff'}
+      placeholderTextColor={theme === 'Light' ? '#212121' : 'white'}
       onChangeText={props.task}
+      text
     />
   );
 };
