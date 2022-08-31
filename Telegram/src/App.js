@@ -36,7 +36,7 @@ const App = () => {
 
 const getRouteName = route => {
   const routeName = getFocusedRouteNameFromRoute(route) ?? 'FirstPageDefault';
-  if (routeName?.includes('Giriş') || routeName?.includes('FirstPageDefault')) {
+  if (routeName?.includes('FirstPageDefault')) {
     return 'none';
   }
   return 'flex';
