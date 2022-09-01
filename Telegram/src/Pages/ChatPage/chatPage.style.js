@@ -8,7 +8,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
   },
-  enableDirection: {
+  enabledDirection: {
     flex: 1,
   },
   bottomBar: {
@@ -16,8 +16,13 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 8,
     paddingLeft: 12,
-    backgroundColor: 'white',
     alignItems: 'center',
+  },
+  bottomBarDark: {
+    backgroundColor: '#212121',
+  },
+  bottomBarLight: {
+    backgroundColor: '#fff',
   },
   textInput: {
     width: '75%',
@@ -30,10 +35,15 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
-    backgroundColor: 'white',
     margin: 0,
     padding: 0,
     paddingTop: 0,
     color: 'white',
+  },
+  sendButtonDark: {
+    backgroundColor: '#212121',
+  },
+  sendButtonLight: {
+    backgroundColor: '#fff',
   },
 });
