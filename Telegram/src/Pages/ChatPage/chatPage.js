@@ -3,7 +3,6 @@ import {
   SafeAreaView,
   TextInput,
   FlatList,
-  Button,
   View,
   ImageBackground,
 } from 'react-native';
@@ -12,6 +11,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {MessageContext} from '../../utils/messageBoxManager';
 import MessageUnit from '../../Components/MessageBoxes/messageBoxes';
 import styles from './chatPage.style';
+import {ReceiverContext} from '../../utils/receiverManager';
 
 const phone = <Icon name="phone" size={30} color="black" />;
 const dots = <Icon name="dots-vertical" size={30} color="black" />;
@@ -23,6 +23,8 @@ const ChatPage = ({route, navigation}) => {
   const {newMessage} = React.useContext(MessageContext);
   const {messageDesigner} = React.useContext(MessageContext);
   const {messageSender} = React.useContext(MessageContext);
+  const {receiver} = React.useContext(ReceiverContext);
+  const {setReceiver} = React.useContext(ReceiverContext);
   const {item} = route.params;
   const delText = () => {
     messageDesigner(' ');
@@ -36,6 +38,7 @@ const ChatPage = ({route, navigation}) => {
       onPress={() => {
         messageSender();
         delText();
+        setReceiver([item.name, item.image]);
       }}
     />
   );
