@@ -4,13 +4,15 @@ import {ThemeContext} from '../../utils/themeManager';
 import styles from './topBar.style';
 
 const TopBar = ({src, name, icon1, icon2}) => {
+  const {theme} = React.useContext(ThemeContext);
   return (
-    <SafeAreaView style={styles.enabledDirection}>
+    <SafeAreaView
+      style={[styles.enabledDirection, styles[`enabledDirection${theme}`]]}>
       <View style={styles.directionRow}>
         <View style={styles.textImage}>
           {src && <Image source={src} style={styles.img} />}
           {/* if src prop is not passed, not show the place of image as space. */}
-          <Text style={styles.text}>{name}</Text>
+          <Text style={[styles.text, styles[`text${theme}`]]}>{name}</Text>
         </View>
         <View style={styles.rightIcon}>
           <View>{icon1}</View>

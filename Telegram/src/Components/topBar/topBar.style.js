@@ -2,8 +2,13 @@ import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   enabledDirection: {
-    backgroundColor: '#71a6e2',
     justifyContent: 'center',
+  },
+  enabledDirectionLight: {
+    backgroundColor: '#71a6e2',
+  },
+  enabledDirectionDark: {
+    backgroundColor: '#212121',
   },
   directionRow: {
     flexDirection: 'row',
@@ -21,6 +26,12 @@ export default StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     paddingLeft: 10,
+  },
+  textDark: {
+    color: 'white',
+  },
+  textLight: {
+    color: '#212121',
   },
   textView: {
     justifyContent: 'center',
