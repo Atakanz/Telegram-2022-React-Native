@@ -17,6 +17,7 @@ export const MessageProvider = ({children}) => {
     }
     setNewMessage(' ');
   };
+  const lastMessageItem = message[message.length - 1];
 
   return (
     <MessageContext.Provider
@@ -25,6 +26,7 @@ export const MessageProvider = ({children}) => {
         messageSender,
         messageDesigner,
         newMessage,
+        lastMessageItem,
       }}>
       {/* It will wrap all the NavigationProvider */}
       {children}
