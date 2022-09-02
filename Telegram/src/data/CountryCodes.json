@@ -2,6 +2,11 @@
 {
 "name": "Turkey",
 "dial_code": "+90",
+"code": "+"
+},
+{
+"name": "Turkey",
+"dial_code": "+90",
 "code": "TR"
 },
 {
