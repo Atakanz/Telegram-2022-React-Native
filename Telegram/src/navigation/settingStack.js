@@ -16,6 +16,7 @@ export const SettingStack = () => {
           backgroundColor: theme === 'Dark' ? '#212121' : '#fff',
         },
         headerTintColor: theme === 'Dark' ? '#fff' : '#212121',
+        headerShown: false,
       }}>
       <Stack.Screen name="Settings" component={settingsPage} />
       <Stack.Screen name="Tema" component={themePage} />
