@@ -27,6 +27,7 @@ export default StyleSheet.create({
   },
   textInfo: {
     fontSize: 13,
+    marginLeft: 4,
     fontWeight: 'bold',
   },
   textDark: {
@@ -37,5 +38,11 @@ export default StyleSheet.create({
   },
   textView: {
     justifyContent: 'center',
+    alignItems: 'flex-start',
+  },
+  TextMessage: {
+    flex: 1,
+    position: 'absolute',
+    left: 5,
   },
 });

@@ -13,12 +13,16 @@ const MessageListCard = props => {
             <Image source={props.link} style={styles.img} />
           </View>
           <View style={[styles.textView, styles[`textView${theme}`]]}>
-            <Text style={[styles.textInfo, styles[`text${theme}`]]}>
-              {props.name}
-            </Text>
-            <Text style={[styles.textState, styles[`text${theme}`]]}>
-              {props.lastMessage}
-            </Text>
+            <View>
+              <Text style={[styles.textInfo, styles[`text${theme}`]]}>
+                {props.name}
+              </Text>
+            </View>
+            <View style={styles.textMessageView}>
+              <Text style={[styles.textMessage, styles[`text${theme}`]]}>
+                {props.lastMessage}
+              </Text>
+            </View>
           </View>
         </View>
       </TouchableOpacity>
