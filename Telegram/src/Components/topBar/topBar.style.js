@@ -3,6 +3,9 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   enabledDirection: {
     justifyContent: 'center',
+    paddingLeft: 5,
+    borderBottomColor: 'white',
+    borderBottomWidth: 0.2,
   },
   enabledDirectionLight: {
     backgroundColor: '#71a6e2',
@@ -12,6 +15,7 @@ export default StyleSheet.create({
   },
   directionRow: {
     flexDirection: 'row',
+    alignItems: 'center',
   },
   rightIcon: {
     flexDirection: 'row',
@@ -25,7 +29,7 @@ export default StyleSheet.create({
   text: {
     fontSize: 18,
     fontWeight: 'bold',
-    paddingLeft: 10,
+    paddingLeft: 6,
   },
   textDark: {
     color: 'white',
@@ -42,12 +46,15 @@ export default StyleSheet.create({
     height: 30,
     borderRadius: 50,
     marginHorizontal: 10,
-    marginLeft: 10,
+    marginLeft: 2,
     marginRight: 1,
   },
   textImage: {
     flexDirection: 'row',
     marginRight: 'auto',
     alignItems: 'center',
+  },
+  firstIcon: {
+    marginVertical: 10,
   },
 });
