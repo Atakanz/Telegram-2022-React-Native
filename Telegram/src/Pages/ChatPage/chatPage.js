@@ -23,10 +23,20 @@ const ChatPage = ({route, navigation}) => {
   const {theme} = React.useContext(ThemeContext);
   const {item} = route.params;
 
-  const colorSelect = theme === 'Dark' ? 'white' : '#212121';
+  const colorSelect = theme === 'Dark' ? '#fff' : '#212121';
 
   const phone = <Icon name="phone" size={25} color={colorSelect} />;
   const dots = <Icon name="dots-vertical" size={25} color={colorSelect} />;
+  const goBack = (
+    <Icon.Button
+      name="keyboard-backspace"
+      size={30}
+      onPress={() => navigation.goBack()}
+      style={[styles.ıconButton, styles[`backButton${theme}`]]}
+      color={colorSelect}
+    />
+    // goBack() navigation property is added to goBack ıcon.
+  );
   const smile = (
     <Icon name="emoticon-excited-outline" size={25} color={colorSelect} />
   );
@@ -37,7 +47,7 @@ const ChatPage = ({route, navigation}) => {
   const sent = (
     <Icon.Button
       name="send"
-      style={[styles.sendButton, styles[`sendButton${theme}`]]}
+      style={[styles.ıconButton, styles[`ıconButton${theme}`]]}
       size={25}
       color="#3390ec"
       onPress={() => {
@@ -52,7 +62,13 @@ const ChatPage = ({route, navigation}) => {
   );
   return (
     <SafeAreaView style={styles.enabledDirection}>
-      <TopBar src={item.image} name={item.name} icon1={phone} icon2={dots} />
+      <TopBar
+        src={item.image}
+        name={item.name}
+        icon1={goBack}
+        icon2={phone}
+        icon3={dots}
+      />
       <View style={styles.container}>
         <ImageBackground
           source={

@@ -27,7 +27,7 @@ export default StyleSheet.create({
   textInput: {
     width: '75%',
   },
-  sendButton: {
+  ıconButton: {
     flex: 0,
     width: 30,
     height: 30,
@@ -40,10 +40,16 @@ export default StyleSheet.create({
     paddingTop: 0,
     color: 'white',
   },
-  sendButtonDark: {
+  ıconButtonDark: {
     backgroundColor: '#212121',
   },
-  sendButtonLight: {
+  ıconButtonLight: {
     backgroundColor: '#fff',
+  },
+  backButtonDark: {
+    backgroundColor: '#212121',
+  },
+  backButtonLight: {
+    backgroundColor: '#71a6e2',
   },
 });
