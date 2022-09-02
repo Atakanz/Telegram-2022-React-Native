@@ -4,8 +4,11 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     height: '100%',
+  },
+  touchableView: {
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: 210,
   },
   containerLight: {
     backgroundColor: '#fff',
@@ -36,5 +39,24 @@ export default StyleSheet.create({
   },
   textDark: {
     color: '#fff',
+  },
+  ıconButton: {
+    flex: 0,
+    width: 30,
+    height: 30,
+    alignSelf: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    margin: 0,
+    padding: 0,
+    paddingTop: 0,
+    color: 'white',
+  },
+  backButtonDark: {
+    backgroundColor: '#212121',
+  },
+  backButtonLight: {
+    backgroundColor: '#71a6e2',
   },
 });
