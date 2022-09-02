@@ -17,7 +17,7 @@ const MessageList = () => {
   const magnify = <Icon name="magnify" size={25} color={colorSelect} />;
   return (
     <SafeAreaView style={[styles.container, styles[`container${theme}`]]}>
-      <TopBar name="Telegram" icon2={magnify} />
+      <TopBar name="Telegram" icon3={magnify} />
       <Text>{receiver.id}</Text>
       <View style={styles.container}>
         {/* <View style={styles.container}></View> */}
