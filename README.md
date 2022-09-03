@@ -15,7 +15,7 @@ git clone https://github.com/patika-218-akbank-reactnative-bootcamp/assignment-3
 ```
 
 ```
-cd WhatsApp
+cd Telegram
 ```
 ```
 npx react-native start
@@ -25,7 +25,7 @@ npx react-native run-android
 ```
 ## TECHNICALITIES
 
- At the start of the project, a nested form of stack and bottom navigation is created. A common top-bar custom component is created for all required pages. First, login page and form is shown to user and the page is navigated to bottom-tab screen with login button. Contacts are listed with touchable components and the navigation to personal chatpages which is the third stack screen is provided. The changes such as sended messages are planned to be shown as a list in the second bottom tab but it is the only missing target in the current version. The third bottom-tab page is comprised of stack screen form and includes all the settings pages. First, users can edit their info and toggle the light-dark mode here. Also, log-out button provides user to navigate login page by erasing all user data. 
+ At the start of the project, a nested form of stack and bottom navigation is created. A common top-bar custom component is created for all required pages. First, login page and form is shown to user and the page is navigated to bottom-tab screen with login button. Contacts are listed with touchable components and the navigation to personal chatpages which is the third stack screen is provided. The changes such as sended messages are planned to be shown as a list in the second bottom tab but it is the only missing target in the current version. The third bottom-tab page is comprised of stack screen form and includes all the settings pages. First, users can edit their info and toggle the light-dark mode here. Also, log-out button provides user to navigate login page by erasing all user data. Async storage will be included at next versions of the project.
 
 
 
