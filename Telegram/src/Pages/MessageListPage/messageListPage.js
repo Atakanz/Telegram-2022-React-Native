@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, FlatList, View, Text} from 'react-native';
+import {SafeAreaView, FlatList, View} from 'react-native';
 import {ThemeContext} from '../../utils/themeManager';
 import {ReceiverContext} from '../../utils/receiverManager';
 import TopBar from '../../Components/topBar/topBar';

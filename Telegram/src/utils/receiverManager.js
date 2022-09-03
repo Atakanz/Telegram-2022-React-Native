@@ -3,7 +3,6 @@ import React from 'react';
 export const ReceiverContext = React.createContext();
 //  {UserContext} will be imported in all required files.
 export const ReceiverProvider = ({children}) => {
-  // useState - start area
   const [receiverArray, setReceiverArray] = React.useState([]);
   const [onlyContacts, setOnlyContacts] = React.useState([]);
 

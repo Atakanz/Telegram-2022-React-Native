@@ -4,7 +4,7 @@ export const ContactList = [
     name: 'Pınar',
     surname: 'DEU',
     image: require('../assets/image1.jpg'),
-    lastSeen: 'son görülme bugün 18:06',
+    lastSeen: 'son görülme bugün 18:01',
     messages: [],
   },
   {
@@ -20,7 +20,7 @@ export const ContactList = [
     name: 'Sedat',
     surname: 'DEU',
     image: require('../assets/image3.jpg'),
-    lastSeen: 'son görülme bugün 18:06',
+    lastSeen: 'son görülme bugün 18:25',
     messages: [],
   },
   {
@@ -28,7 +28,7 @@ export const ContactList = [
     name: 'Özgün',
     surname: 'DEU',
     image: require('../assets/image4.jpg'),
-    lastSeen: 'son görülme bugün 18:06',
+    lastSeen: 'son görülme bugün 17:56',
     messages: [],
   },
   {
@@ -36,7 +36,7 @@ export const ContactList = [
     name: 'Ecem',
     surname: 'DEU',
     image: require('../assets/image5.jpg'),
-    lastSeen: 'son görülme bugün 18:06',
+    lastSeen: 'son görülme bugün 16:46',
     messages: [],
   },
 ];

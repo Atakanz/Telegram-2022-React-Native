@@ -19,9 +19,7 @@ const MessageListCard = props => {
               </Text>
             </View>
             <View style={styles.textMessageView}>
-              <Text style={[styles.textMessage, styles[`text${theme}`]]}>
-                {props.lastMessage[props.lastMessage.length - 1].text}
-              </Text>
+              <Text style={[styles.textMessage, styles[`text${theme}`]]} />
             </View>
           </View>
         </View>
