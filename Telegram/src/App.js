@@ -6,9 +6,10 @@ import {BottomTab} from './navigation/BottomTab';
 import ChatPage from './Pages/ChatPage';
 import {ThemeProvider} from './utils/themeManager';
 import {UserProvider} from './utils/userManager';
-import {LoginProvider} from './utils/loginManager';
-import {MessageProvider} from './utils/messageBoxManager';
 import {ReceiverProvider} from './utils/receiverManager';
+import {LoginProvider} from './utils/loginManager';
+// import {MessageProvider} from './utils/messageBoxManager';
+// import {ReceiverProvider} from './utils/receiverManager';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,17 +18,15 @@ const App = () => {
     <NavigationContainer>
       <ThemeProvider>
         <LoginProvider>
-          <UserProvider>
-            <ReceiverProvider>
-              <MessageProvider>
-                <Stack.Navigator screenOptions={{headerShown: false}}>
-                  <Stack.Screen name="LoginPage" component={LoginPage} />
-                  <Stack.Screen name="BottomTab" component={BottomTab} />
-                  <Stack.Screen name="ChatPage" component={ChatPage} />
-                </Stack.Navigator>
-              </MessageProvider>
-            </ReceiverProvider>
-          </UserProvider>
+          <ReceiverProvider>
+            <UserProvider>
+              <Stack.Navigator screenOptions={{headerShown: false}}>
+                <Stack.Screen name="LoginPage" component={LoginPage} />
+                <Stack.Screen name="BottomTab" component={BottomTab} />
+                <Stack.Screen name="ChatPage" component={ChatPage} />
+              </Stack.Navigator>
+            </UserProvider>
+          </ReceiverProvider>
         </LoginProvider>
       </ThemeProvider>
     </NavigationContainer>
