@@ -7,7 +7,7 @@ const MessageListCard = props => {
   const {theme} = React.useContext(ThemeContext);
   return (
     <SafeAreaView style={[styles.container, styles[`container${theme}`]]}>
-      <TouchableOpacity onPress={props.task}>
+      <TouchableOpacity>
         <View style={styles.enabledDirection}>
           <View style={styles.viewImg}>
             <Image source={props.link} style={styles.img} />
@@ -20,7 +20,7 @@ const MessageListCard = props => {
             </View>
             <View style={styles.textMessageView}>
               <Text style={[styles.textMessage, styles[`text${theme}`]]}>
-                {props.lastMessage}
+                {props.lastMessage[props.lastMessage.length - 1].text}
               </Text>
             </View>
           </View>
